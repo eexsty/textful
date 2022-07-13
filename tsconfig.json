@@ -1,9 +1,21 @@
 {
-  "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "esnext",
-    "target": "esnext",
-    // "bun-types" is the important part
-    "types": ["bun-types"]
-  }
+    "compilerOptions": {
+        "lib": [
+            "ESNext"
+        ],
+        "strict": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "types": [
+            "vite/client",
+            "bun-types"
+        ],
+        "noEmit": true,
+        "isolatedModules": true
+    }
 }
